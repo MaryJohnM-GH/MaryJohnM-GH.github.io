@@ -1,116 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mary John Madathil | Agile Delivery Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mary John Madathil | Agile Delivery Lead</title>
+<meta name="description" content="Agile Delivery Lead and Certified Scrum Master (PSM I & II) with 18 years in technology. AI-enabled delivery governance at Thomson Reuters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10202F;--muted:#4D5B69;--bg:#F4F7F8;--card:#fff;--line:#D5DEE3;--teal:#0A6C74;--teal-d:#07474D;--amber:#E8A92B;--max:1040px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+nav{position:sticky;top:0;z-index:5;background:rgba(244,247,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.5rem;align-items:center;justify-content:space-between;height:56px}
+nav strong{font-family:"Bricolage Grotesque",sans-serif}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{text-decoration:none;color:var(--ink);font-size:.95rem;white-space:nowrap}
+nav a:hover{color:var(--teal)}
+.hero{background:var(--teal-d);color:#fff;padding:5rem 0 4.5rem}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:700}
+.hero .role{font-size:1.15rem;margin:1rem 0 .5rem;color:#CFE6E8}
+.hero p.lead{max-width:34rem;color:#E6F1F2}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:500;border:2px solid #fff;color:#fff}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+.btn:hover{filter:brightness(1.08)}
+.board{background:#fff;color:var(--ink);border-radius:10px;padding:1.25rem;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.board h2{font-size:1rem;margin-bottom:.9rem;color:var(--muted);font-weight:500}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.col{background:var(--bg);border-radius:6px;padding:.6rem}
+.col h3{font-size:.85rem;color:var(--teal-d);margin-bottom:.5rem}
+.tkt{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:4px;padding:.45rem .55rem;margin-bottom:.45rem;font-size:.82rem;line-height:1.35}
+.tkt b{display:block;font-size:1.25rem;font-family:"Bricolage Grotesque",sans-serif}
+.col:nth-child(2) .tkt{border-left-color:var(--amber)}
+.col:nth-child(3) .tkt{border-left-color:var(--ink)}
+section{padding:4.5rem 0}
+section+section{border-top:1px solid var(--line)}
+h2.t{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:1.75rem}
+.about{max-width:44rem}
+.about p{margin:0 0 1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.25rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1.4rem;display:flex;flex-direction:column}
+.card h3{font-size:1.25rem;margin-bottom:.5rem}
+.card p{margin:0 0 1rem;color:var(--muted);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem;padding:0;list-style:none}
+.tags li{font-size:.8rem;background:#E3EEF0;color:var(--teal-d);padding:.15rem .6rem;border-radius:99px}
+.card a.repo{font-weight:500}
+.hint{color:var(--muted);font-size:.95rem;margin-top:1.25rem}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:3px solid var(--teal)}
+.tl>li{position:relative;margin-bottom:2.25rem}
+.tl>li::before{content:"";position:absolute;left:calc(-1.5rem - 8px);top:.45rem;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
+.tl h3{font-size:1.25rem}
+.tl .meta{color:var(--muted);font-size:.95rem;margin:.15rem 0 .6rem}
+.tl ul{margin:0;padding-left:1.1rem}
+.tl ul li{margin-bottom:.35rem}
+.tl h4{margin:1rem 0 .3rem;font-size:1rem;font-family:"Bricolage Grotesque",sans-serif;color:var(--teal-d)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem}
+.two h3{font-size:1.3rem;margin-bottom:.8rem}
+.two ul{margin:0;padding-left:1.1rem}
+.two li{margin-bottom:.4rem}
+.two small{color:var(--muted)}
+footer{background:var(--ink);color:#DCE5EA;padding:3.5rem 0;text-align:center}
+footer a{color:#fff}
+footer h2{color:#fff;margin-bottom:.75rem}
+footer .links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.25rem}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}nav strong{display:none}}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Mary John Madathil</h1>
-      <p>Agile Delivery Lead | Certified Scrum Master (PSM I & II) | SAFe 6.0 </p>
-      <p>Target Role: Agile Delivery</p>
-      <div class="hero-links">
-        <a href="mailto:mary.johnm@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/mary-john-madathil/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/MaryJohnM-GH/KnowMaryJ.git" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </header>
 
-  <nav>
+<nav aria-label="Main">
+  <div class="wrap">
+    <strong>Mary John Madathil</strong>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#credentials">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>Agile Delivery Lead & Certified Scrum Master (PSM I & II) with 18 years in technology, including 6+ years leading Agile and Scrum delivery across multi-team programs at Thomson Reuters. Skilled in delivery governance, Agile coaching, AI-enabled reporting automation, and stakeholder engagement.</p>
-    </section>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Mary John Madathil</h1>
+      <p class="role">Agile Delivery Lead &middot; Certified Scrum Master (PSM I &amp; II) &middot; SAFe 6.0</p>
+      <p class="lead">I run multi-team programs at Thomson Reuters, spot risks early, and use AI tools to make delivery reporting faster and more predictable.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://www.linkedin.com/in/mary-john-madathil/">LinkedIn</a>
+        <a class="btn" href="mailto:mary.johnm@gmail.com">Email me</a>
+      </div>
+    </div>
+    <aside class="board" aria-label="Delivery results at a glance">
+      <h2>Results from my current role</h2>
+      <div class="cols">
+        <div class="col"><h3>Delivered</h3>
+          <div class="tkt"><b>95%</b>on-time sprint completion</div>
+          <div class="tkt"><b>4</b>concurrent initiatives</div>
+        </div>
+        <div class="col"><h3>Improved</h3>
+          <div class="tkt"><b>25%</b>fewer blockers</div>
+          <div class="tkt"><b>15–20%</b>sprint predictability</div>
+        </div>
+        <div class="col"><h3>Automated</h3>
+          <div class="tkt"><b>50%</b>shorter reporting cycle</div>
+          <div class="tkt"><b>4h → 2h</b>sprint report turnaround</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</header>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <article>
-        <h3>AI Automation Programs</h3>
-        <p>Directed 3 concurrent AI automation initiatives at Thomson Reuters. Reduced blockers by 25%, improved sprint predictability by 15–20%, and automated reporting using Claude, GitHub Copilot, and Teams Copilot.</p>
-      </article>
-      <article>
-        <h3>Indirect-Tax Filing Platform</h3>
-        <p>Managed roadmap sequencing, risk detection, and stakeholder reporting to ensure on-time delivery of a critical tax filing platform.</p>
-      </article>
-      <article>
-        <h3>Modernization Projects</h3>
-        <p>Led Agile program delivery to transition legacy applications to modern platforms. Embedded QA rigor and improved Agile metrics.</p>
-      </article>
-      <article>
-        <h3>QA Automation Frameworks</h3>
-        <p>Built and maintained Selenium, JUnit, TestNG, and REST Assured suites. Integrated CI/CD pipelines with Jenkins, Maven, and Gradle.</p>
-      </article>
-    </section>
+<main>
+<section id="about">
+  <div class="wrap about">
+    <h2 class="t">About</h2>
+    <p>I have 18 years in technology, including 4+ years leading multi-team programs at Thomson Reuters. I started in QA and test automation, moved into Scrum Master and project management roles, and now lead delivery across AI automation programs and an indirect-tax filing platform.</p>
+    <p>I work with senior leadership, engineering, product, UX, QA, and external vendors. My strengths are early risk detection, roadmap resequencing, and delivery governance backed by dashboards and AI-assisted reporting (Claude, GitHub Copilot, Teams Copilot).</p>
+    <p>I am a member of the Women at TR Council, co-organise global AI hackathons, and contribute to the Innovation Council.</p>
+  </div>
+</section>
 
-    <section id="experience">
-      <h2>Experience</h2>
+<section id="projects">
+  <div class="wrap">
+    <h2 class="t">Projects</h2>
+    <div class="grid" id="project-grid"></div>
+    <p class="hint">More on <a href="https://github.com/maryjohnm-gh">my GitHub profile</a>.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 class="t">Experience</h2>
+    <ol class="tl">
+      <li>
+        <h3>Associate Delivery Lead, Thomson Reuters</h3>
+        <p class="meta">Oct 2024 – Present &middot; Bengaluru</p>
+        <h4>Delivery leadership</h4>
+        <ul>
+          <li>Direct delivery across 4 concurrent initiatives (3 AI automation programs and 1 indirect-tax filing platform), turning leadership plans into sprint execution.</li>
+          <li>Coordinate daily across engineering, product, UX, QA, and vendors; reduced blockers by 25%.</li>
+          <li>Act as primary interface with senior leadership, consolidating risks, milestones, and dependencies into unified dashboards.</li>
+          <li>Reprioritise roadmaps and sequence streams to prevent release slips; improved sprint predictability by 15–20%.</li>
+          <li>Facilitate trade-off discussions on scope and timeline changes, sustaining 95% on-time sprint completion.</li>
+        </ul>
+        <h4>Governance and automation</h4>
+        <ul>
+          <li>Built delivery dashboards in Azure DevOps and Power BI, cutting reporting cycle time by 50%.</li>
+          <li>Reduced manual reporting effort by 30% with AI automation; sprint reports now take 2 hours instead of 4.</li>
+          <li>Mentored engineers, UX designers, and SMEs on Agile practices, speeding onboarding by 20% across 3 teams.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Scrum Master and Project Manager, Thomson Reuters</h3>
+        <p class="meta">Oct 2018 – Oct 2024</p>
+        <ul>
+          <li>Led Agile delivery for modernisation projects moving legacy applications to modern platforms.</li>
+          <li>Facilitated Scrum ceremonies and retrospectives that drove process improvements across multiple teams.</li>
+          <li>Managed dependencies and risks early, keeping roadmaps on track.</li>
+          <li>Served as both QA Lead and Scrum Master, reducing release defects.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Associate Tech Lead and Senior QA Engineer, Thomson Reuters</h3>
+        <p class="meta">Jun 2011 – Oct 2018</p>
+        <ul>
+          <li>Led QA across product teams; owned test strategy, automation frameworks, and CI/CD integration (Jenkins, Maven, Gradle).</li>
+          <li>Built UI and API automation suites with Selenium, JUnit, TestNG, and REST Assured.</li>
+          <li>Set shared quality standards across distributed teams.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Earlier roles</h3>
+        <p class="meta">2004 – 2011</p>
+        <ul>
+          <li>QA Engineer, HP Autonomy (2010–2011) and Interwoven (2007–2008).</li>
+          <li>Customer and Technical Support Executive, Convergys (2004–2006), supporting global accounts.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="t">Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>AI for delivery</h3><ul class="tags"><li>Claude (MCP)</li><li>GitHub Copilot</li><li>Teams Copilot</li></ul></div>
+      <div class="card"><h3>Delivery and governance</h3><ul class="tags"><li>Scrum</li><li>SAFe</li><li>Agile coaching</li><li>Risk management</li><li>Change management</li><li>Capacity planning</li><li>Release management</li></ul></div>
+      <div class="card"><h3>Tools and data</h3><ul class="tags"><li>Azure DevOps</li><li>Power BI</li><li>Python</li><li>Spreadsheets</li></ul></div>
+      <div class="card"><h3>Quality engineering</h3><ul class="tags"><li>Selenium</li><li>JUnit</li><li>TestNG</li><li>Postman</li><li>REST Assured</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap two">
+    <div>
+      <h2 class="t">Certifications</h2>
       <ul>
-        <li><strong>Thomson Reuters</strong> (2011–Present)  
-          - Associate Delivery Lead (2024–Present)  
-          - Scrum Master / Project Manager (2018–2024)  
-          - Associate Tech Lead / Senior QA Engineer (2011–2018)
-        </li>
-        <li><strong>HP Autonomy</strong> (2010–2011) – QA Engineer</li>
-        <li><strong>Interwoven</strong> (2007–2008) – QA Engineer</li>
-        <li><strong>Convergys</strong> (2004–2006) – Customer/Technical Support Executive</li>
+        <li>SAFe 6.0 POPM (2026)</li>
+        <li>AI-First Product Management, Airtribe (April 2026)</li>
+        <li>Professional Scrum Master II, Scrum.org (2025)</li>
+        <li>Advanced Data Analytics Program, Thomson Reuters (2025)</li>
+        <li>Associate Data Analyst (Power BI), DataCamp (2025)</li>
+        <li>Professional Scrum Master I, Scrum.org (2022)</li>
+        <li>MTA: Introduction to Programming Using Python, Microsoft (2021)</li>
+        <li>ISTQB Certified Tester, Foundation Level (2012)</li>
       </ul>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
+    </div>
+    <div>
+      <h2 class="t">Education</h2>
       <ul>
-        <li>M.Tech, Software Engineering – BITS Pilani (2022–2023)</li>
-        <li>B.Tech, Instrumentation – Cochin University (1999–2003, University 2nd Rank)</li>
+        <li><strong>M.Tech, Software Engineering</strong> (CGPA 8.24)<br><small>BITS Pilani, Work Integrated Learning Programme, 2022–2023</small></li>
+        <li><strong>B.Tech, Instrumentation</strong> (University 2nd Rank)<br><small>Cochin University of Science and Technology, 1999–2003</small></li>
       </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>Agile/Scrum frameworks, Agile coaching, AI tooling (Claude, GitHub Copilot, Teams Copilot), governance & PMO, risk management, sprint/release planning, Azure DevOps, Power BI, Python basics, test automation (Selenium, JUnit, TestNG, REST Assured, Postman).</p>
-    </section>
-
-    <section id="certifications">
-      <h2>Certifications & Achievements</h2>
+      <h2 class="t" style="margin-top:2.5rem">Community</h2>
       <ul>
-        <li>SAFe POPM – training completed, certification in progress (2026)</li>
-        <li>AI-First Product Management – Airtribe (2026)</li>
-        <li>Professional Scrum Master II – Scrum.org (2025)</li>
-        <li>Advanced Data Analytics Program – Thomson Reuters (2025)</li>
-        <li>Associate Data Analyst (Power BI) – DataCamp (2025)</li>
-        <li>Professional Scrum Master I – Scrum.org (2022)</li>
-        <li>MTA: Python Programming – Microsoft (2021)</li>
-        <li>ISTQB Foundation Level (2012)</li>
+        <li>Women at TR Council: co-organiser of global AI hackathons</li>
+        <li>Innovation Council contributor</li>
+        <li>Women in Big Data India, Shakthi mentorship (12 weeks, ML and data analytics)</li>
       </ul>
-    </section>
+    </div>
+  </div>
+</section>
+</main>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:mary.johnm@gmail.com">mary.johnm@gmail.com</a></p>
-      <p>Phone: 9986085926</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mary-john-madathil/" target="_blank">linkedin.com/in/mary-john-madathil</a></p>
-      <p>GitHub: <a href="https://github.com/MaryJohnM-GH/KnowMaryJ.git" target="_blank">github.com/MaryJohnM-GH/KnowMaryJ.git</a></p>
-    </section>
-  </main>
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Open to Agile delivery and program leadership roles.</p>
+    <div class="links">
+      <a href="mailto:mary.johnm@gmail.com">mary.johnm@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mary-john-madathil/">LinkedIn</a>
+      <a href="https://github.com/maryjohnm-gh">GitHub</a>
+    </div>
+  </div>
+</footer>
 
-  <footer>
-    <p>&copy; 2026 Mary John Madathil</p>
-  </footer>
-  <script src="script.js"></script>
+<script>
+/* EDIT HERE: replace each placeholder with your real repo details. Add or remove objects freely. */
+const projects = [
+  { title: "Project name 1", desc: "One or two sentences on the problem it solves and what you built.", tags: ["Python", "AI"], url: "https://github.com/maryjohnm-gh/REPO-1" },
+  // { title: "Project name 2", desc: "One or two sentences on the problem it solves and what you built.", tags: ["Agile", "Analytics"], url: "https://github.com/maryjohnm-gh/REPO-2" },
+  // { title: "Project name 3", desc: "One or two sentences on the problem it solves and what you built.", tags: ["Product", "Case study"], url: "https://github.com/maryjohnm-gh/REPO-3" }
+];
+const grid = document.getElementById("project-grid");
+projects.forEach(p => {
+  const c = document.createElement("article");
+  c.className = "card";
+  const h = document.createElement("h3"); h.textContent = p.title;
+  const d = document.createElement("p"); d.textContent = p.desc;
+  const t = document.createElement("ul"); t.className = "tags";
+  p.tags.forEach(x => { const li = document.createElement("li"); li.textContent = x; t.appendChild(li); });
+  const a = document.createElement("a"); a.className = "repo"; a.href = p.url; a.textContent = "View on GitHub";
+  c.append(h, d, t, a);
+  grid.appendChild(c);
+});
+</script>
 </body>
 </html>

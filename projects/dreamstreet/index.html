@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamStreet: First-Time Investor Trust and Activation | Mary John Madathil</title>
+<meta name="description" content="Product case study: closing the trust gap for first-time investors on DreamStreet through KYC fixes, activation and an AI assistant strategy.">
+
+<style>
+:root{
+ --ink:#10202F;
+ --muted:#4D5B69;
+ --bg:#F4F7F8;
+ --line:#D5DEE3;
+ --teal:#0A6C74;
+ --amber:#E8A92B;
+ --max:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+.container{max-width:var(--max);margin:auto;padding:0 24px}
+.hero{background:var(--teal);color:#fff;padding:80px 0}
+.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:12px}
+.hero p{font-size:1.2rem;max-width:720px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tag{background:rgba(255,255,255,0.15);padding:8px 14px;border-radius:999px}
+.buttons{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:600}
+.btn-primary{background:var(--amber);color:var(--ink)}
+.btn-secondary{color:#fff;border:2px solid #fff}
+section{padding:60px 0}
+section+section{border-top:1px solid var(--line)}
+.section-title{font-size:2rem;margin-bottom:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{margin-top:0}
+.grid{display:grid;gap:24px}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;text-align:center}
+.metric h3{color:var(--teal);margin:0 0 8px;font-size:2.2rem}
+.timeline{display:grid;gap:16px}
+.step{background:#fff;border-left:5px solid var(--teal);padding:18px;border-radius:8px}
+.step h3{margin:0 0 4px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{background:#EAF4F5;color:var(--teal);padding:10px 15px;border-radius:999px}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:600px}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#EAF4F5;color:var(--teal)}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right}
+.note{color:var(--muted);font-size:.95rem;margin-top:12px}
+.callout{background:#EAF4F5;border-left:5px solid var(--amber);border-radius:8px;padding:20px 24px}
+footer{background:var(--ink);color:#fff;padding:40px;text-align:center}
+a{color:var(--teal)}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>DreamStreet: First-Time Investor Trust and Activation</h1>
+    <p>
+      A product management case study on why first-time investors reject a new
+      broking app before they try it, and how to fix trust, KYC drop-off and
+      early retention, including the role of its AI assistant, Veda.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Product Management</span>
+      <span class="tag">Trust &amp; KYC Funnel</span>
+      <span class="tag">Activation</span>
+      <span class="tag">AI Assistant</span>
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="DreamStreet_firstTimeinvestorTrust.pdf" target="_blank" rel="noopener">View Full Deck (PDF)</a>
+      <a class="btn btn-secondary" href="/">Back to Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Context</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>About DreamStreet</h3>
+        <ul>
+          <li>SEBI-registered stock broker from Dream Sports (parent of Dream11), launched May 2026</li>
+          <li>Target user: first-time investors, 22–35, urban India, ₹4–15L income, no demat account yet</li>
+          <li>Stocks and ETFs only at launch, no mutual funds</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Market</h3>
+        <ul>
+          <li>Active retail clients shrinking for the first time in five years (4.57 Cr in FY26)</li>
+          <li>Groww: 1.29 Cr clients, 28% share. Zerodha: 68.9L and declining</li>
+          <li>Real-money gaming ban wiped out about 95% of Dream11 revenue</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">The Problem</h2>
+    <div class="callout">
+      <p><strong>DreamStreet loses first-time investors at the trust layer, not the product layer.</strong> More than half of potential users reject the brand before they experience the product.</p>
+    </div>
+    <div class="grid two-col" style="margin-top:24px">
+      <div class="card">
+        <h3>1. Brand rejection (pre-install)</h3>
+        <p>"Dream11 = gambling app" blocks trust before sign-up.</p>
+      </div>
+      <div class="card">
+        <h3>2. KYC trust breaks</h3>
+        <p>PAN pre-filled with no explanation, an unknown "Digio" on the consent screen, and "Finverse Platform Pvt Ltd" on the eSign document, never disclosed earlier.</p>
+      </div>
+      <div class="card">
+        <h3>3. Activation with no guide</h3>
+        <p>A 1–2 day mandatory wait with no engagement plan, then a home screen of speculative stock tips and no ETF starter path.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Research Insights</h2>
+    <div class="metric-grid">
+      <div class="metric"><h3>94%</h3>had never heard of DreamStreet</div>
+      <div class="metric"><h3>56%</h3>reacted negatively to the Dream Sports connection</div>
+      <div class="metric"><h3>61%</h3>said a portfolio notification would bring them back next day</div>
+      <div class="metric"><h3>28%</h3>named the SEBI registration number as the top trust signal</div>
+    </div>
+    <p class="note">Survey of 18 people, so directional rather than statistically conclusive.</p>
+    <div class="card" style="margin-top:24px">
+      <h3>India-specific insights</h3>
+      <ul>
+        <li>Trust is family-mediated: first-timers must convince a spouse or parents</li>
+        <li>Dream11 carries a negative association in public memory, not a neutral one</li>
+        <li>Experienced investors are harder to convert; first-timers are the real opportunity</li>
+        <li>Mutual funds and SIPs are the default "start investing" model, so ETFs need positioning as a bridge</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Solutions</h2>
+    <div class="grid two-col">
+      <div class="card"><h3>S1 · Trust pre-screen</h3><p>One screen before account opening: SEBI number, "your money is separate from Dream Sports", accounts opened so far, and a 15-second real-user testimonial.</p></div>
+      <div class="card"><h3>S2 · SEBI badge everywhere</h3><p>SEBI registration and "SEBI-regulated broker" in the app store listing, splash screen and above the fold on the homepage.</p></div>
+      <div class="card"><h3>S3 · Explanation copy at three screens</h3><p>One reassuring sentence before PAN pre-fill, the Digio redirect and the eSign document.</p></div>
+      <div class="card"><h3>S4 · Day-1 portfolio push</h3><p>A 9:30 AM notification the morning after the first investment showing how it is doing.</p></div>
+      <div class="card"><h3>S5 · Veda "Explain before you invest"</h3><p>On first visit to the investment screen, Veda offers an optional 2-minute explainer on what a Nifty 50 ETF is.</p></div>
+      <div class="card"><h3>S6 · Veda "Gyaan Path"</h3><p>A 7-day, ~90-second-a-day learning sequence from ETF basics to tax basics and setting a SIP-style goal.</p></div>
+      <div class="card"><h3>S7 · Referral with a portfolio card</h3><p>Share a masked-balance portfolio card with the SEBI badge, not a generic link. The referred friend gets ₹100 invested on sign-up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Prioritisation (RICE)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Solution</th>
+            <th class="num">Reach</th><th class="num">Impact</th><th class="num">Confidence</th><th class="num">Effort</th><th class="num">RICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>S2 · SEBI badge on app store and homepage</td><td class="num">3</td><td class="num">4</td><td class="num">75%</td><td class="num">0.25</td><td class="num"><strong>36.0</strong></td></tr>
+          <tr><td>S4 · Day-1 portfolio push</td><td class="num">2</td><td class="num">4</td><td class="num">100%</td><td class="num">0.25</td><td class="num"><strong>32.0</strong></td></tr>
+          <tr><td>S3 · Explanation copy at three screens</td><td class="num">2</td><td class="num">3</td><td class="num">75%</td><td class="num">0.25</td><td class="num"><strong>18.0</strong></td></tr>
+          <tr><td>S1 · Trust pre-screen</td><td class="num">3</td><td class="num">3</td><td class="num">75%</td><td class="num">0.5</td><td class="num"><strong>13.5</strong></td></tr>
+          <tr><td>S5 · Veda "Explain before you invest"</td><td class="num">2</td><td class="num">3</td><td class="num">75%</td><td class="num">0.5</td><td class="num"><strong>9.0</strong></td></tr>
+          <tr><td>S6 · Veda "Gyaan Path"</td><td class="num">2</td><td class="num">3</td><td class="num">50%</td><td class="num">1</td><td class="num"><strong>3.0</strong></td></tr>
+          <tr><td>S7 · Referral with portfolio card</td><td class="num">1</td><td class="num">4</td><td class="num">50%</td><td class="num">1</td><td class="num"><strong>2.0</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">RICE = (Reach × Impact × Confidence) ÷ Effort. Effort is in engineering and design months (0.25 = under 2 weeks).</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Screen-Level Fixes</h2>
+    <p>Nine changes identified from a real app walkthrough. All P0 items are copy-only and shippable in week one.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Priority</th><th>Screen</th><th>Change</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>P0</td><td>Splash</td><td>Lead with SEBI number; move "A Dream Sports Company" below the fold; add "Mutual Funds coming soon"</td><td>Copy</td></tr>
+          <tr><td>P0</td><td>PAN</td><td>Explain that PAN is retrieved from NSDL via the user's mobile, as other brokers do</td><td>Copy</td></tr>
+          <tr><td>P0</td><td>Aadhaar → DigiLocker</td><td>Introduce Digio as a SEBI-approved eKYC partner before the redirect</td><td>Copy</td></tr>
+          <tr><td>P0</td><td>eSign</td><td>Explain that Finverse Platform Pvt Ltd is DreamStreet's SEBI-registered legal entity</td><td>Copy</td></tr>
+          <tr><td>P0</td><td>Congratulations</td><td>Promise a notification when the account is live; add "While you wait → Ask Veda"</td><td>Copy + 1 button</td></tr>
+          <tr><td>P1</td><td>Home (pending state)</td><td>Replace speculative tips with an ETF Starter Pack, activation status and Veda entry</td><td>Design + product</td></tr>
+          <tr><td>P1</td><td>Bank verification</td><td>Explain the ₹1 charge as standard RBI verification, refunded in 24 hours</td><td>Copy</td></tr>
+          <tr><td>P1</td><td>Products activated</td><td>Make F&amp;O opt-in for first-time investors; add an MF timeline note</td><td>Product + copy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Veda, the AI Assistant</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>What Veda can do</h3>
+        <ul>
+          <li>Explain concepts in plain Hindi or English</li>
+          <li>Explain market moves ("your portfolio is down ₹47 today, here's why")</li>
+          <li>Answer "is this safe?" using SEBI framework facts</li>
+          <li>Run the 7-day Gyaan Path and the optional ETF explainer</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What Veda cannot do (SEBI rules)</h3>
+        <ul>
+          <li>Recommend specific stocks</li>
+          <li>Time the market or suggest sectors</li>
+          <li>Tell users to sell a holding</li>
+          <li>Give portfolio allocation advice</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">In the survey, 7 of 18 said Veda not recommending stocks is better. The regulatory limit is positioned as a trust feature.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Where DreamStreet Can Win</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dimension</th><th>Groww</th><th>Zerodha</th><th>DreamStreet now</th><th>DreamStreet fixed</th></tr></thead>
+        <tbody>
+          <tr><td>SEBI number on app store</td><td>Not shown</td><td>Not shown</td><td>Not shown</td><td>First to do it</td></tr>
+          <tr><td>Legal entity disclosed</td><td>On website</td><td>On website</td><td>Only on eSign doc</td><td>Before KYC</td></tr>
+          <tr><td>PAN pre-fill explained</td><td>Yes</td><td>Yes</td><td>Silent</td><td>One sentence</td></tr>
+          <tr><td>F&amp;O default for new users</td><td>Opt-in</td><td>Opt-in</td><td>On by default</td><td>Opt-in</td></tr>
+          <tr><td>First-investment guidance</td><td>Guided lists</td><td>Raw screener</td><td>Speculative tips</td><td>ETF Starter Pack</td></tr>
+          <tr><td>Activation notification</td><td>SMS + email</td><td>SMS + email</td><td>No commitment shown</td><td>Notification committed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">The app store SEBI badge is an open position: none of the competitors reviewed use it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">North Star and Metrics</h2>
+    <div class="callout">
+      <p><strong>D14 Active Investor Rate:</strong> the share of app installs that make at least one investment and return within 14 days. Baseline about 6%, target above 15% in 90 days.</p>
+    </div>
+    <div class="grid two-col" style="margin-top:24px">
+      <div class="card">
+        <h3>Leading</h3>
+        <ul>
+          <li>App store install conversion</li>
+          <li>KYC drop-off per step</li>
+          <li>Day-1 notification open rate</li>
+          <li>Account activation return rate</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Lagging</h3>
+        <ul>
+          <li>KYC to first investment rate</li>
+          <li>D14 Active Investor Rate</li>
+          <li>NPS after first investment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Go-to-Market Roadmap</h2>
+    <div class="timeline">
+      <div class="step"><h3>Phase 1 · Weeks 1–2 · Trust foundation</h3>SEBI badge, trust pre-screen, brand separation page, upfront disclosure of MF status, legal entity and F&amp;O.</div>
+      <div class="step"><h3>Phase 2 · Weeks 3–6 · Funnel conversion</h3>Reassurance copy at PAN, Digio and eSign; activation engagement plan; Day-1 notification; Veda explainer.</div>
+      <div class="step"><h3>Phase 3 · Weeks 6–10 · First investment</h3>ETF Starter Pack, KYC re-engagement nudge, Veda 7-day Gyaan Path.</div>
+      <div class="step"><h3>Phase 4 · Week 10+ · Growth loop</h3>Read-only family portfolio view, referral with portfolio card, ₹100 invested for referred friends.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Takeaway</h2>
+    <div class="callout">
+      <p><strong>The product is already compliant and competitive. It just doesn't communicate it.</strong> Fix trust first, then bring users in.</p>
+    </div>
+    <h2 class="section-title" style="margin-top:48px">PM Skills Demonstrated</h2>
+    <div class="skills">
+      <span class="skill">Funnel Analysis</span>
+      <span class="skill">User Research</span>
+      <span class="skill">Trust &amp; Conversion Design</span>
+      <span class="skill">RICE Prioritisation</span>
+      <span class="skill">AI Product Strategy</span>
+      <span class="skill">Regulatory Awareness</span>
+      <span class="skill">North Star Metrics</span>
+      <span class="skill">Go-to-Market</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Created by Mary John Madathil • Product Management Portfolio</p>
+</footer>
+
+</body>
+</html>

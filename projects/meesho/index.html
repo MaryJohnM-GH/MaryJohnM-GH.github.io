@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meesho: Increasing Transactions per User | Mary John Madathil</title>
+<meta name="description" content="Product case study: user research, personas, impact-effort and RICE prioritisation to increase transactions per user on Meesho.">
+
+<style>
+:root{
+ --ink:#10202F;
+ --muted:#4D5B69;
+ --bg:#F4F7F8;
+ --card:#ffffff;
+ --line:#D5DEE3;
+ --teal:#0A6C74;
+ --amber:#E8A92B;
+ --max:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+.container{max-width:var(--max);margin:auto;padding:0 24px}
+.hero{background:var(--teal);color:#fff;padding:80px 0}
+.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:12px}
+.hero p{font-size:1.2rem;max-width:700px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tag{background:rgba(255,255,255,0.15);padding:8px 14px;border-radius:999px}
+.buttons{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:600}
+.btn-primary{background:var(--amber);color:var(--ink)}
+.btn-secondary{color:#fff;border:2px solid #fff}
+section{padding:60px 0}
+section+section{border-top:1px solid var(--line)}
+.section-title{font-size:2rem;margin-bottom:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{margin-top:0}
+.grid{display:grid;gap:24px}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;text-align:center}
+.metric h3{color:var(--teal);margin:0 0 8px;font-size:2rem}
+.step{background:#fff;border-left:5px solid var(--teal);padding:18px;border-radius:8px}
+.timeline{display:grid;gap:16px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{background:#EAF4F5;color:var(--teal);padding:10px 15px;border-radius:999px}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#EAF4F5;color:var(--teal)}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right}
+.note{color:var(--muted);font-size:.95rem;margin-top:12px}
+.callout{background:#EAF4F5;border-left:5px solid var(--amber);border-radius:8px;padding:20px 24px}
+footer{background:var(--ink);color:#fff;padding:40px;text-align:center}
+a{color:var(--teal)}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>Meesho: Increasing Transactions per User</h1>
+    <p>
+      A product thinking case study on why Meesho has strong reach but low
+      purchase frequency, and which fixes to prioritise using user research,
+      personas and RICE scoring.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Product Management</span>
+      <span class="tag">User Research</span>
+      <span class="tag">Personas</span>
+      <span class="tag">RICE Prioritisation</span>
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="Meesho_probFraming_Prioritization.pdf" target="_blank" rel="noopener">View Full Deck (PDF)</a>
+      <a class="btn btn-secondary" href="/">Back to Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">The Problem</h2>
+    <div class="card">
+      <p>
+        Meesho reaches a large user base, but users buy less often and keep
+        cart values low. The objective was to increase transactions per user
+        (a lever on ARPU) by improving trust, experience and reliability.
+      </p>
+      <ul>
+        <li>Buy less frequently than on competing platforms</li>
+        <li>Deliberately keep cart values low because of perceived risk</li>
+        <li>Compare Meesho with Amazon, Flipkart and Myntra before buying</li>
+      </ul>
+      <p class="note">Group exercise with Shubham Pawar and Monika Jilla. Based on survey responses, personas, Meesho's annual report and public articles.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">User Research</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>Approach</h3>
+        <ul>
+          <li>Google Form survey with demographic and behavioural questions</li>
+          <li>21 responses from surveys and 1:1 phone conversations</li>
+          <li>Competitive comparison across Meesho, Amazon, Flipkart and Myntra/Ajio</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Key Insights</h3>
+        <ul>
+          <li>Trust and product quality are the top barriers to frequent purchases</li>
+          <li>Delivery problems and slow support hurt repeat usage</li>
+          <li>Many users keep carts small to limit risk</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Personas</h2>
+    <div class="grid two-col">
+      <div class="card">
+        <h3>Tushar: Value-first professional</h3>
+        <p>25–34, Tier 1/2. Buys home/kitchen items and men's wear. Worried about authenticity, delivery delays and limited brands.</p>
+      </div>
+      <div class="card">
+        <h3>Pooja: Modern homemaker</h3>
+        <p>25–44, Tier 1. Buys women's wear and home items. Frustrated by inconsistent quality and a slow app; prefers Myntra.</p>
+      </div>
+      <div class="card">
+        <h3>Sheetal: Value-oriented deal seeker</h3>
+        <p>45+, Tier 2, professional. Medium cart value, actively hunts deals, high potential for cart value growth.</p>
+      </div>
+      <div class="card">
+        <h3>Saniya: Impulse buyer</h3>
+        <p>18–34, Tier 1, professional. Quick decisions, little time in app; held back by trust, delivery and weak support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Prioritisation (RICE)</h2>
+    <p>
+      Ideas were first grouped on an impact-effort matrix, then scored with a
+      directional RICE model. With no internal data, scores are relative, not exact.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Solution</th>
+            <th>Category</th>
+            <th class="num">Reach</th>
+            <th class="num">Impact</th>
+            <th class="num">Confidence</th>
+            <th class="num">Effort</th>
+            <th class="num">RICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Improve customer support</td><td>Quick win</td><td class="num">70</td><td class="num">3</td><td class="num">85%</td><td class="num">3</td><td class="num"><strong>59.5</strong></td></tr>
+          <tr><td>Mandatory reviews (remaining ~20%)</td><td>Quick win</td><td class="num">25</td><td class="num">4</td><td class="num">90%</td><td class="num">2</td><td class="num"><strong>45.0</strong></td></tr>
+          <tr><td>Minor UX improvements</td><td>Fill-in</td><td class="num">80</td><td class="num">2</td><td class="num">80%</td><td class="num">3</td><td class="num"><strong>42.7</strong></td></tr>
+          <tr><td>Better delivery + WhatsApp updates</td><td>Big bet</td><td class="num">65</td><td class="num">5</td><td class="num">75%</td><td class="num">6</td><td class="num"><strong>40.6</strong></td></tr>
+          <tr><td>Mid-range quality products</td><td>Fill-in</td><td class="num">40</td><td class="num">4</td><td class="num">70%</td><td class="num">6</td><td class="num"><strong>18.7</strong></td></tr>
+          <tr><td>Major app / website overhaul</td><td>Money pit</td><td class="num">60</td><td class="num">3</td><td class="num">40%</td><td class="num">9</td><td class="num"><strong>8.0</strong></td></tr>
+          <tr><td>Onboard big brands</td><td>Money pit</td><td class="num">20</td><td class="num">4</td><td class="num">50%</td><td class="num">9</td><td class="num"><strong>4.4</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">RICE = (Reach × Impact × Confidence) ÷ Effort.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Key Learning</h2>
+    <div class="callout">
+      <p><strong>Trust and delivery experience move transactions per user more than adding premium brands.</strong></p>
+      <p>Quick wins in customer support and transparency pay off faster than a major platform overhaul.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">PM Skills Demonstrated</h2>
+    <div class="skills">
+      <span class="skill">Problem Framing</span>
+      <span class="skill">User Research</span>
+      <span class="skill">Persona Creation</span>
+      <span class="skill">Competitive Analysis</span>
+      <span class="skill">Impact-Effort Matrix</span>
+      <span class="skill">RICE Prioritisation</span>
+      <span class="skill">Metrics Thinking</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Created by Mary John Madathil • Product Management Portfolio</p>
+</footer>
+
+</body>
+</html>
